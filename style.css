@@ -1,0 +1,156 @@
+/* ======= RESET ======= */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #111;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* ======= CABEÇALHO ======= */
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 20px 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffcc00;
+    letter-spacing: 2px;
+    font-family: arial black;
+}
+
+.menu a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #ddd;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #ffcc00;
+}
+
+/* ======= HERO ======= */
+.hero {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 5%;
+    background: linear-gradient(135deg, #ffcc00 0%, #ff8800 100%);
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(255, 136, 0, 0.3);
+    width: 90%;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #111;
+    line-height: 1.2;
+}
+
+.hero img {
+    width: 300px;
+    filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.4));
+}
+
+/* Responsividade do Hero */
+@media (max-width: 850px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .hero img {
+        margin-top: 20px;
+        width: 240px;
+    }
+}
+
+/* ======= LISTA DE PRODUTOS ======= */
+.listar-produtos {
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    width: 90%;
+}
+
+/* ======= CARD DO PRODUTO ======= */
+.um-produto {
+    background: #1a1a1a;
+    padding: 25px;
+    border-radius: 18px;
+    text-align: center;
+    transition: transform .3s, box-shadow .3s;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4);
+}
+
+.um-produto:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+}
+
+/* ======= IMAGENS ======= */
+.um-produto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 15px 0;
+    display: block;
+}
+
+/* ======= TÍTULO E PREÇO ======= */
+.um-produto h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #ffcc00;
+}
+
+.um-produto strong {
+    font-size: 1.4rem;
+    color: #ffcc00; /* amarelo aplicado */
+    font-weight: 700;
+}
+
+/* ======= BOTÕES ======= */
+.btn-outline-light {
+    border-color: #ffcc00 !important;
+    color: #ffcc00 !important;
+}
+
+.btn-outline-light:hover {
+    background-color: #ffcc00 !important;
+    color: #000 !important;
+}
+
+/* ======= RODAPÉ ======= */
+.rodape {
+    background-color: #000;
+    padding: 25px;
+    text-align: center;
+    margin-top: 50px;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.rodape p {
+    margin: 0;
+}
